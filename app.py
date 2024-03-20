@@ -55,21 +55,11 @@ import plotly.io as pio
 from streamlit_lottie import st_lottie
 
 st.set_page_config(
-    page_title="Data Voyager",
+    page_title="Data Voyager ML App",
     page_icon="🤖",
     layout="wide"
 )
 st.set_option('deprecation.showPyplotGlobalUse', False)
-
-def load_lottie_url(url):
-    r = requests.get(url)
-    if r.status_code!= 200:
-        return None
-    return r.json()
-
-lottie_coding = load_lottie_url("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-
-st_lottie(lottie_coding, height=200, key="coding")
 
 def main():
     st.title("Data Voyager 🤖")
