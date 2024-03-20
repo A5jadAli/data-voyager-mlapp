@@ -84,7 +84,7 @@ def main():
         # EDA Section
         if st.sidebar.checkbox("Do you want to perform basic EDA analysis?"):
             st.write("### Dataset Shape:")
-            st.write(data.shape)
+            st.write(f"The dataset have {data.shape[0]} rows and {data.shape[1]} columns.")
             st.write("### Dataset Columns:")
             st.write(data.columns)
             st.write("### Dataset Data Types:")
