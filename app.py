@@ -83,8 +83,6 @@ def main():
     if data is not None:
         # EDA Section
         if st.sidebar.checkbox("Do you want to perform basic EDA analysis?"):
-            st.write("### Dataset Overview:")
-            st.write(data.info())
             st.write("### Dataset Shape:")
             st.write(data.shape)
             st.write("### Dataset Columns:")
