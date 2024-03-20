@@ -55,7 +55,7 @@ import plotly.io as pio
 from streamlit_lottie import st_lottie
 
 st.set_page_config(
-    page_title="Data Voyager ML App",
+    page_title="Data Voyager",
     page_icon="🤖",
     layout="wide"
 )
